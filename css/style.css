@@ -1,0 +1,234 @@
+/*import fonts from Google*/
+@import url('https://fonts.googleapis.com/css?family=Prociono|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*General changes*/
+body {
+	font-family: 'Prociono', serif;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+img {
+	max-width: 300px;
+}
+
+/*Navigation styling*/
+.navbar {
+	border-radius: 0;
+	border: 0;
+}
+
+nav.navbar {
+	background: rgba(0,0,0,.9);
+}
+
+nav.navbar-default .navbar-header a.navbar-brand {
+	color: white;
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+nav.navbar-default .navbar-nav a {
+	font-size: 1.2em;
+	color: white;
+}
+								/*target hover pseudo class*/
+nav.navbar-default .navbar-nav a:hover {
+	color: yellow;
+	font-size: 1.4em;
+}
+
+nav.navbar-default .navbar-nav .active a{
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+nav.navbar-default .navbar-nav .active a:hover {
+	font-size: 1.6em;
+}
+
+
+/*Header Image and Headline Styling*/
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('../images/keyboard.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    padding: 120px 0;
+}
+
+.headline h1, .headline h2 {
+	font-weight: 700;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    box-sizing: border-box;
+}
+
+.headline h1 {
+	font-size: 5em;
+}
+
+/*changes within pages*/
+.page {
+	padding-top: 75px;
+}
+
+.page h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*About Me Page*/
+.aboutMe h3{
+	font-size: 3em;
+}
+.aboutMe p{
+	font-size: 1.3em;
+}
+
+.aboutMe img{
+	width: 300px;
+}
+
+/*Styling for the language icons section*/
+hr {    
+	display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: black;
+}
+
+.languageIcons img{
+	width: 150px;
+	height: 150px;
+}
+
+
+/*page-services*/
+.service {
+	margin: 20px 0;
+}
+
+#services img {
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+#services h3 {
+	margin-bottom: 10px;
+}
+
+@media only screen
+and (min-width: 450px)
+and (max-width: 750px) {
+	.service p, .service h3{
+		padding: 0 10%;
+	}
+}
+
+/*projects page*/
+
+#projects blockquote {
+	margin: 0;
+	padding: 0;
+	border-left: none;
+	min-height: 500px;
+	position: relative;
+}
+
+#projects blockquote  .quote {
+	background-color: rgba(255,255,255,.6);
+	padding: 20px 5%;
+	position: absolute;
+	bottom: 0;
+	width: 75%;
+	font-weight: 400;
+	border-radius: 0 50px 0 0;
+}
+
+#projects blockquote .quote:hover {
+	background-color: rgba(239, 240, 196, .9);
+}
+
+#projects #barbellsAndBrews {
+	background: url('../images/barbellsandbrewssite.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#projects #theWeightliftingScoop {
+	background: url('../images/theweightliftingscoopsite.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#projects #pictureEliminator {
+	background: url('../images/pictureEliminator.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#projects #christmasCountdown {
+	background: url('../images/christmasCountdown.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#projects .quote .more, #projects .quote .customer {
+	opacity: 1;
+	font-size: 0;
+	line-height: 0;
+	padding-top: 10px;
+}
+
+#projects .quote:hover .more {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	display: block;
+	opacity: 1;
+	font-size: .8em;
+	line-height: 120%;
+}
+
+#projects .quote:hover .customer {
+	display: block;
+	font-size: .7em;
+	text-align: right;
+}
+
+#projects .quote .intro::after {
+	content: '...';
+}
+
+#projects .quote:hover .intro::after {
+	content: '';
+}
+
+/*Footer Styling*/
+footer {
+	color: white;
+	font-size: 1.4em;
+	background: #000000;
+	padding: 20px 0 40px 0;
+}
+
+footer .email {
+	font-size: 1.6em;
+	font-weight: 700;
+	color: yellow;
+}
