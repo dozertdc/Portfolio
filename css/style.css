@@ -196,7 +196,7 @@ and (max-width: 750px) {
 	padding-top: 10px;
 }
 
-#projects .quote:hover .more {
+#projects .quote:hover .more, #projects .quote:active .more {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	display: block;
