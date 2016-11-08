@@ -215,6 +215,7 @@ and (max-width: 750px) {
 	line-height: 120%;
 }
 
+
 #projects .quote:hover .customer {
 	display: block;
 	font-size: .7em;
@@ -295,3 +296,11 @@ ul.social-icons {
     background-color: #e25714;
 }
 
+<<<<<<< HEAD
+=======
+footer .email {
+	font-size: 1.6em;
+	font-weight: 700;
+	color: yellow;
+}
+>>>>>>> origin/gh-pages
