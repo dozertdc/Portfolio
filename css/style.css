@@ -206,7 +206,7 @@ and (max-width: 750px) {
 	line-height: 0;
 	padding-top: 10px;
 }
-#projects .quote:hover .more {
+#projects .quote:hover .more, #projects .quote:active .more {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	display: block;
@@ -216,7 +216,7 @@ and (max-width: 750px) {
 }
 
 
-#projects .quote:hover .customer {
+#projects .quote:hover .customer, #projects .quote:active .customer {
 	display: block;
 	font-size: .7em;
 	text-align: right;
@@ -227,7 +227,7 @@ and (max-width: 750px) {
 	content: '...';
 }
 
-#projects .quote:hover .intro::after {
+#projects .quote:hover .intro::after, #projects .quote:active .intro::after {
 	content: '';
 }
 
