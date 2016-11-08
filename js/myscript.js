@@ -20,4 +20,10 @@ $(function(){
     	} //click function
   	}); //smooth scrolling
 
+    
+
+    $('button').on('click', function() {        
+      $('.more').toggle('slow');
+      console.log("I've been clicked");
+    });
 });

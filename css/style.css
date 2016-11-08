@@ -1,6 +1,8 @@
 /*import fonts from Google*/
 @import url('https://fonts.googleapis.com/css?family=Prociono|Rubik');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 /*General changes*/
 body {
@@ -24,7 +26,7 @@ img {
 }
 
 nav.navbar {
-	background: rgba(0,0,0,.9);
+	background: rgba(0,0,0,.7);
 }
 
 nav.navbar-default .navbar-header a.navbar-brand {
@@ -35,22 +37,27 @@ nav.navbar-default .navbar-header a.navbar-brand {
 
 nav.navbar-default .navbar-nav a {
 	font-size: 1.2em;
-	color: white;
+	color: white !important;
 }
 								/*target hover pseudo class*/
 nav.navbar-default .navbar-nav a:hover {
-	color: yellow;
+	color: yellow !important;
 	font-size: 1.4em;
 }
 
 nav.navbar-default .navbar-nav .active a{
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 1.4em;
 }
 
 nav.navbar-default .navbar-nav .active a:hover {
 	font-size: 1.6em;
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: black;
+}
+
 
 
 /*Header Image and Headline Styling*/
@@ -75,6 +82,9 @@ nav.navbar-default .navbar-nav .active a:hover {
     background: rgba(255,255,255,0.9);
     box-sizing: border-box;
 }
+ .header-social-icons {
+ 	padding: 0 10px 0 0;
+ }
 
 .headline h1 {
 	font-size: 5em;
@@ -165,6 +175,7 @@ and (max-width: 750px) {
 	border-radius: 0 50px 0 0;
 }
 
+
 #projects blockquote .quote:hover {
 	background-color: rgba(239, 240, 196, .9);
 }
@@ -195,7 +206,6 @@ and (max-width: 750px) {
 	line-height: 0;
 	padding-top: 10px;
 }
-
 #projects .quote:hover .more {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
@@ -211,6 +221,7 @@ and (max-width: 750px) {
 	text-align: right;
 }
 
+
 #projects .quote .intro::after {
 	content: '...';
 }
@@ -222,13 +233,65 @@ and (max-width: 750px) {
 /*Footer Styling*/
 footer {
 	color: white;
-	font-size: 1.4em;
+	font-size: .9em;
 	background: #000000;
-	padding: 20px 0 40px 0;
+	padding: 20px 0 20px 0;
 }
 
-footer .email {
-	font-size: 1.6em;
-	font-weight: 700;
-	color: yellow;
+footer p {
+	padding: 25px 0 0 0;
 }
+
+.social-icon {
+    color: #fff;
+}
+
+footer ul.social-icons {
+	float: right;
+	margin-top: 10px;
+}
+
+ul.social-icons {
+	margin-top: 10px;
+	padding: 10px;
+}
+.social-icons li {
+	vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding:10px 12px;
+    background-color: #00aced;
+}
+
+.fa-github {
+    padding:10px 14px;
+    background-color: #0072b1;
+}
+
+.fa-youtube {
+    padding:10px 14px;
+    background-color: #e64a41;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    background-color: #0073a4;
+}
+
+.fa-google-plus {
+    padding:10px 9px;
+    background-color: #e25714;
+}
+
