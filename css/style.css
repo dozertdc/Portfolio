@@ -190,8 +190,8 @@ and (max-width: 750px) {
 	background-size: cover;
 }
 
-#projects #pictureEliminator {
-	background: url('../images/pictureEliminator.jpg') no-repeat center;
+#projects #erms {
+	background: url('../images/ERMS.jpg') no-repeat center;
 	background-size: cover;
 }
 
